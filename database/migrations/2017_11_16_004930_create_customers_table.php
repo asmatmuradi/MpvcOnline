@@ -17,7 +17,7 @@ class CreateCustomersTable extends Migration
           $table->increments('id');
           $table->string('first_Name');
           $table->string('last_Name');
-          $table->integer('phone_number');
+          $table->string('phone_Number');
           $table->integer('balance');
           $table->timestamps();
         });
