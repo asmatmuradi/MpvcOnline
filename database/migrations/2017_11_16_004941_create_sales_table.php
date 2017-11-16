@@ -15,7 +15,7 @@ class CreateSalesTable extends Migration
     {
         Schema::create('sales', function (Blueprint $table) {
           $table->increments('id');
-          $table->foreign('product_Id');
+          $table->integer('product_Id');
           $table->timestamps();
         });
     }
