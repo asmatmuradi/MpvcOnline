@@ -11,8 +11,11 @@
 |
 */
 
-Route::get('/', function () {
+Route::any('/home/', function () {
     return view('welcome');
+});
+Route::any('/contact/', function () {
+    return view('store.contact');
 });
 Route::get('/debug', function () {
 
@@ -40,3 +43,4 @@ Route::get('/debug', function () {
 
     dump($debug);
 });
+Route::get('/', 'WelcomeController');
