@@ -15,7 +15,10 @@ class CreateSalesTable extends Migration
     {
         Schema::create('sales', function (Blueprint $table) {
           $table->increments('id');
+          $table->string('customer_Id');
           $table->integer('product_Id');
+          $table->integer('discount_Allowance')->comment('% of dicount for the product');
+          $table->integer('quantity_Sold')->comment('Quantity of product sold');
           $table->timestamps();
         });
     }

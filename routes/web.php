@@ -17,6 +17,7 @@ Route::any('/home/', function () {
 Route::any('/contact/', function () {
     return view('store.contact');
 });
+Route::any('/product/', 'ProductController@index');
 Route::get('/debug', function () {
 
     $debug = [

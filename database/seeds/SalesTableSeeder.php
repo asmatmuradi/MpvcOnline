@@ -13,9 +13,9 @@ class SalesTableSeeder extends Seeder
     public function run()
     {
       $sales = [
-      [1],
-      [2],
-      [3]
+      [1,2,8,25],
+      [2,3,5,12],
+      [3,4,10,20]
 
   ];
 
@@ -25,7 +25,11 @@ class SalesTableSeeder extends Seeder
       Sale::insert([
           'created_at' => Carbon\Carbon::now()->subDays($count)->toDateTimeString(),
           'updated_at' => Carbon\Carbon::now()->subDays($count)->toDateTimeString(),
-          'product_Id' => $sale[0]
+          'customer_Id'=> $sale[0],
+          'product_Id' => $sale[1],
+          'discount_Allowance' => $sale[2],
+          'quantity_Sold' => $sale[2]
+
 
       ]);
       $count--;
