@@ -42,7 +42,7 @@ class ProductController extends Controller
 */
         $product = Product::find('name');
         if ($product){
-            return view('store.addproduct');
+            return view('store.addProduct');
         }
         elseif (!$product) {
           $product = new Product();
@@ -55,12 +55,12 @@ class ProductController extends Controller
           $product->image = $request->input('image');
           $product->save();
 
-          return view('store.addproduct');
+          return view('store.addProduct');
 
         }
       }
         else {
-          return view('store.addproduct');
+          return view('store.addProduct');
         }
 
     }
