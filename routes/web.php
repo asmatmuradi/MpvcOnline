@@ -11,13 +11,11 @@
 |
 */
 
-Route::any('/home/', function () {
-    return view('welcome');
-});
-Route::any('/contact/', function () {
-    return view('store.contact');
-});
+Route::any('/home/', 'WelcomeController');
+Route::any('/contact/', 'WelcomeController@contact');
+Route::any('/addproduct/', 'ProductController@add');
 Route::any('/product/', 'ProductController@index');
+
 Route::get('/debug', function () {
 
     $debug = [

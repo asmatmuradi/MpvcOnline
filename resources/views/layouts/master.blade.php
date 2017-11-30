@@ -14,7 +14,9 @@
 
 </head>
 <body>
-	<header>
+	<div clsss='container'>
+
+	<header class='row'>
 
 			{{-- ToDo: Make it so active link in nav is highlighted --}}
 			<nav>
@@ -26,17 +28,15 @@
 					</ul>
 			</nav>
 	</header>
-
-	<section id='main'>
+<div id='main' class ='row'>
 		@yield('content')
-	</section>
-
+</div>
 	<footer class="text-center">
+<div id="copyright text-right">&copy; {{ date('Y') }} MPVC Online</div>
 
-		&copy; {{ date('Y') }}
 	</footer>
 
 @stack('body')
-
+</div>
 </body>
 </html>

@@ -16,15 +16,52 @@ class ProductController extends Controller
     {
         $products = Product::orderBy('name')->get();
 
-        # Get from DB
-        # $newBooks = Book::orderByDesc('created_at')->limit(3)->get();
-
-        # Get from collection
-        #$newBooks = $books->sortByDesc('created_at')->take(3);
-
         return view('store.product')->with([
             'products' => $products
-            #'newBooks' => $newBooks,
         ]);
+    }
+    /**
+    * add a product
+    */
+    public function add(Request $request)
+    {
+      dump($request);
+
+      if ($request->input('name'))
+      {
+/*
+        $this->validate($request, [
+            'name' => 'required|min:3',
+            'price' => 'required|numeric',
+            'description' => 'required',
+            'quantity' => 'required|numeric',
+            'cost' => 'required',
+            'vendor' => 'required',
+            'image' => 'url'
+        ]);
+*/
+        $product = Product::find('name');
+        if ($product){
+            return view('store.addproduct');
+        }
+        elseif (!$product) {
+          $product = new Product();
+          $product->name = $request->input('name');
+          $product->price = $request->input('price');
+          $product->description = $request->input('description');
+          $product->quantity_Available = $request->input('quantity');
+          $product->cost = $request->input('cost');
+          $product->vendor = $request->input('vendor');
+          $product->image = $request->input('image');
+          $product->save();
+
+          return view('store.addproduct');
+
+        }
+      }
+        else {
+          return view('store.addproduct');
+        }
+
     }
 }

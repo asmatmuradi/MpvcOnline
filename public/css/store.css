@@ -59,9 +59,8 @@ font-size: 24px;
 /*-----------------------------------------------
 product
 -------------------------------------------------*/
-.producList{
-  text-align:center;
+.container{
+  text-align:left;
   margin-top:20px;
   padding:5px;
-  font-size: 24px;
 }
