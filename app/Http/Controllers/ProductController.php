@@ -25,7 +25,7 @@ class ProductController extends Controller
     */
     public function add(Request $request)
     {
-      dump($request);
+      #dump($request);
 
       if ($request->input('name'))
       {
