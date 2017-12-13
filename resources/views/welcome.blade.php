@@ -6,10 +6,7 @@
 
     <h1>Welcome to MPVC Online</h1>
     <p>
-        A new generation of systems
-    </p>
-    <p>
-        PVC door and windows
+        A new generation of systems - PVC door and windows
     </p>
     <img width="100%" class="imagess" src="images/home.png">
 

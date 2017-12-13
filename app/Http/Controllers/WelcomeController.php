@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Mail;
+use Session;
 
 class WelcomeController extends Controller
 {
@@ -10,8 +12,5 @@ class WelcomeController extends Controller
   {
       return view('welcome');
   }
-  public function contact(Request $request)
-  {
-    return view ('store.contact')->with('Alert', 'Your message has been sent.');
-  }
+
 }

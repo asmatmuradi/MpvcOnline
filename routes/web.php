@@ -11,10 +11,27 @@
 |
 */
 
+
 Route::any('/home/', 'WelcomeController');
-Route::any('/contact/', 'WelcomeController@contact');
-Route::any('/addproduct/', 'ProductController@add');
+
+
+#add product
+Route::get('/addproduct', 'ProductController@add');
+Route::POST('/addproduct', 'ProductController@save');
+
+##edit product
+Route::any('/product/{id}/edit/', 'ProductController@edit');
+
+Route::any('/product/{id}/edit/', 'ProductController@edit');
+Route::put('/product/{id}', 'ProductController@update');
+
+Route::get('product/{id}/delete/','ProductController@delete');
+Route::delete('/product/{id}', 'ProductController@destroy');
+
 Route::any('/product/', 'ProductController@index');
+
+Route::get('/contact', 'ContactController@contactGet');
+Route::post('/contact/mail', 'ContactController@contactPost');
 
 Route::get('/debug', function () {
 

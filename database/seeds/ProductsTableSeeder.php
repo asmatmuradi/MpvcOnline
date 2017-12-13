@@ -15,17 +15,17 @@ class ProductsTableSeeder extends Seeder
     $products = [
     ['KLASLINE', 4504, '5 Holls 70 mm. System
                         70 mm. Wide Sash Aplication
-                        Trio Glass Application','100','3800','Enderpen','http://www.enderpen.com.tr/uploads/m_zpr2micvs6yjkt8zq948.PNG'],
+                        Trio Glass Application','100','3800','Enderpen','http://www.enderpen.com.tr/uploads/k_5o7pv0zoehta50fkfviv.PNG'],
     ['COMPACTLINE', 1504, '5 Holls 70 mm. System
                           70 mm. Wide Sash Aplication
-                          Trio Glass Application','200','800','Enderpen','http://www.enderpen.com.tr/uploads/m_5zsmlbnmahpy8lodbee4.PNG'],
+                          Trio Glass Application','200','800','Enderpen','http://www.enderpen.com.tr/uploads/k_5zsmlbnmahpy8lodbee4.PNG'],
 
     ['MAXILINE', 1800, '4 Holls 62 mm. System
                         70 mm. Wide Sash Aplication
-                        Trio Glass Application','20','1000','Enderpen','http://www.enderpen.com.tr/uploads/m_kryteser3qsrk09fpc3l.PNG'],
+                        Trio Glass Application','20','1000','Enderpen','http://www.enderpen.com.tr/uploads/k_otdhlnj8ty2z5ro23rk2.PNG'],
     ['SUNLINE', 2800, '4 Holls 62 mm. System
                         70 mm. Wide Sash Aplication
-                        Trio Glass Application','20','1700','Enderpen','http://www.enderpen.com.tr/uploads/m_osl16nhg2rcu1bgcj8c3.PNG'],
+                        Trio Glass Application','20','1700','Enderpen','http://www.enderpen.com.tr/uploads/k_vz0ov6pgqbee6makjzu8.PNG'],
 
 
 ];
