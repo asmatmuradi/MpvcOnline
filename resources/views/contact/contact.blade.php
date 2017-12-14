@@ -22,7 +22,7 @@
               <form action="/contact/mail" method="POST">
                   {{ csrf_field() }}
                   <div class="form-group">
-                      <label name="name">Name:</label>
+                      <label for="name">Name:</label>
                       <input id="name" name="name" class="form-control" value='{{old('name','')}}'>
                       @if($errors->get('name'))
                       <div class='alert alert-danger'>
@@ -31,7 +31,7 @@
                       @endif
                   </div>
                   <div class="form-group">
-                      <label name="email">Email:</label>
+                      <label for="email">Email:</label>
                       <input id="email" name="email" class="form-control" value='{{old('email','')}}'>
                       @if($errors->get('email'))
                       <div class='alert alert-danger'>
@@ -41,7 +41,7 @@
                   </div>
 
                   <div class="form-group">
-                      <label name="subject">Subject:</label>
+                      <label for="subject">Subject:</label>
                       <input id="subject" name="subject" class="form-control" value='{{old('subject','')}}'>
                       @if($errors->get('subject'))
                       <div class='alert alert-danger'>
@@ -51,7 +51,7 @@
                   </div>
 
                   <div class="form-group">
-                      <label name="message">Message:</label>
+                      <label for="message">Message:</label>
                       <textarea id="message" name="message" class="form-control" value='{{old('message','')}}'>Type your message here...</textarea>
                       @if($errors->get('message'))
                       <div class='alert alert-danger'>
