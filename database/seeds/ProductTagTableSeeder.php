@@ -13,23 +13,23 @@ class ProductTagTableSeeder extends Seeder
      */
     public function run()
     {
-      $products =[
+        $products =[
           'COMPACTLINE' => ['pvc','window','doors','profile'],
           'KLASLINE' => ['pvc','doors','aluminum','panel']
               ];
 
-      # Now loop through the above array, creating a new pivot for each product to tag
-      foreach ($products as $name => $tags) {
-          # First get the book
-          $product = Product::where('name', 'like', $name)->first();
+        # Now loop through the above array, creating a new pivot for each product to tag
+        foreach ($products as $name => $tags) {
+            # First get the book
+            $product = Product::where('name', 'like', $name)->first();
 
-          # Now loop through each tag for this product, adding the pivot
-          foreach ($tags as $tagName) {
-              $tag = Tag::where('name', 'like', $tagName)->first();
+            # Now loop through each tag for this product, adding the pivot
+            foreach ($tags as $tagName) {
+                $tag = Tag::where('name', 'like', $tagName)->first();
 
-              # Connect this tag to this product
-              $product->tags()->save($tag);
-          }
-      }
+                # Connect this tag to this product
+                $product->tags()->save($tag);
+            }
+        }
     }
 }

@@ -8,13 +8,12 @@ use Session;
 
 class WelcomeController extends Controller
 {
-  public function __invoke()
-  {
-      return view('welcome');
-  }
-  public function aboutUs()
-  {
-    return view('aboutUs.show');
-  }
-
+    public function __invoke()
+    {
+        return view('welcome');
+    }
+    public function aboutUs()
+    {
+        return view('aboutUs.show');
+    }
 }

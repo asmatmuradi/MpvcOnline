@@ -12,17 +12,17 @@ class SalesTableSeeder extends Seeder
      */
     public function run()
     {
-      $sales = [
+        $sales = [
       [1,2,8,25],
       [2,3,5,12],
       [3,4,10,20]
 
   ];
 
-  $count = count($sales);
+        $count = count($sales);
 
-  foreach ($sales as $key => $sale) {
-      Sale::insert([
+        foreach ($sales as $key => $sale) {
+            Sale::insert([
           'created_at' => Carbon\Carbon::now()->subDays($count)->toDateTimeString(),
           'updated_at' => Carbon\Carbon::now()->subDays($count)->toDateTimeString(),
           'customer_Id'=> $sale[0],
@@ -32,7 +32,7 @@ class SalesTableSeeder extends Seeder
 
 
       ]);
-      $count--;
-  }
+            $count--;
+        }
     }
 }

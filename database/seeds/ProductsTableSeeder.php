@@ -12,7 +12,7 @@ class ProductsTableSeeder extends Seeder
      */
     public function run()
     {
-    $products = [
+        $products = [
     ['KLASLINE', 4504, '5 Holls 70 mm. System
                         70 mm. Wide Sash Aplication
                         Trio Glass Application','100','3800','Enderpen','http://www.enderpen.com.tr/uploads/k_5o7pv0zoehta50fkfviv.PNG'],
@@ -30,10 +30,10 @@ class ProductsTableSeeder extends Seeder
 
 ];
 
-$count = count($products);
+        $count = count($products);
 
-foreach ($products as $key => $product) {
-    Product::insert([
+        foreach ($products as $key => $product) {
+            Product::insert([
         'created_at' => Carbon\Carbon::now()->subDays($count)->toDateTimeString(),
         'updated_at' => Carbon\Carbon::now()->subDays($count)->toDateTimeString(),
         'name' => $product[0],
@@ -44,7 +44,7 @@ foreach ($products as $key => $product) {
         'vendor' => $product[5],
         'image' => $product[6]
     ]);
-    $count--;
-}
-}
+            $count--;
+        }
+    }
 }

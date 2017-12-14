@@ -12,12 +12,12 @@ class TagsTableSeeder extends Seeder
      */
     public function run()
     {
-      $tags = ['pvc', 'profile', 'windows', 'doors', 'window', 'aluminum', 'panel'];
+        $tags = ['pvc', 'profile', 'windows', 'doors', 'window', 'aluminum', 'panel'];
 
-      foreach ($tags as $tagName) {
-          $tag = new Tag();
-          $tag->name = $tagName;
-          $tag->save();
+        foreach ($tags as $tagName) {
+            $tag = new Tag();
+            $tag->name = $tagName;
+            $tag->save();
+        }
     }
-}
 }

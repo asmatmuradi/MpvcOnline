@@ -25,7 +25,7 @@ Route::any('/product/{id}/edit/', 'ProductController@edit');
 Route::any('/product/{id}/edit/', 'ProductController@edit');
 Route::put('/product/{id}', 'ProductController@update');
 
-Route::get('product/{id}/delete/','ProductController@delete');
+Route::get('product/{id}/delete/', 'ProductController@delete');
 Route::delete('/product/{id}', 'ProductController@destroy');
 
 Route::any('/product/', 'ProductController@index');
@@ -36,7 +36,6 @@ Route::post('/contact/mail', 'ContactController@contactPost');
 Route::get('/aboutus', 'WelcomeController@aboutUs');
 
 Route::get('/debug', function () {
-
     $debug = [
         'Environment' => App::environment(),
         'Database defaultStringLength' => Illuminate\Database\Schema\Builder::$defaultStringLength,

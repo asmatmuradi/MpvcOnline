@@ -12,12 +12,12 @@ class CertficationsTableSeeder extends Seeder
      */
     public function run()
     {
-      $certfications = ['ISO9001', 'TSE2012', 'ASTM INTERNATIONAL', 'CNBS'];
+        $certfications = ['ISO9001', 'TSE2012', 'ASTM INTERNATIONAL', 'CNBS'];
 
-      foreach ($certfications as $CertficateName) {
-          $Certficate = new Certification();
-          $Certficate->name = $CertficateName;
-          $Certficate->save();
+        foreach ($certfications as $CertficateName) {
+            $Certficate = new Certification();
+            $Certficate->name = $CertficateName;
+            $Certficate->save();
         }
     }
 }

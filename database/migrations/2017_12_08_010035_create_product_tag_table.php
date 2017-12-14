@@ -23,8 +23,6 @@ class CreateProductTagTable extends Migration
             # Make foreign keys
             $table->foreign('product_id')->references('id')->on('products');
             $table->foreign('tag_id')->references('id')->on('tags');
-
-
         });
     }
 

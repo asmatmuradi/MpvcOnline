@@ -14,10 +14,10 @@ class CreateInventoriesTable extends Migration
     public function up()
     {
         Schema::create('inventories', function (Blueprint $table) {
-          $table->increments('id');
-          $table->integer('Product_Id');
-          $table->integer('quantity_On_Hand');
-          $table->timestamps();
+            $table->increments('id');
+            $table->integer('Product_Id');
+            $table->integer('quantity_On_Hand');
+            $table->timestamps();
         });
     }
 

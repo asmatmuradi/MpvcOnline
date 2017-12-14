@@ -23,7 +23,6 @@ class CreateProductCertificationTable extends Migration
             # Make foreign keys
             $table->foreign('product_id')->references('id')->on('products');
             $table->foreign('certification_id')->references('id')->on('certifications');
-
         });
     }
 
