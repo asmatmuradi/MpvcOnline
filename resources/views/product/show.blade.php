@@ -15,6 +15,11 @@
         {{ $alert }}
     </div>
 @endif
+@if(session('alert'))
+    <div class='alert alert-success col-md'>
+        {{ session('alert') }}
+    </div>
+@endif
 <br />
 <!-- add Button -->
 <div class="text-uppercase text-center">

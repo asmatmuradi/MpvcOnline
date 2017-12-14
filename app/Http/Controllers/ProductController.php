@@ -146,7 +146,7 @@ class ProductController extends Controller
 
         return view('product.delete')->with([
             'product' => $product,
-            'previousUrl' => url()->previous() == url()->current() ? '/product' : url()->previous(),
+            'previousUrl' => url()->previous() == url()->current() ? '/product' : url()->previous()
         ]);
     }
 
