@@ -1,12 +1,20 @@
+html {
+  text-align:left;
+
+  margin-left:0px;
+  margin-right:5px;
+  padding:5px;
+}
 
 .background img {
   width: 100%;
+
 
 }
 header {
     text-align:right;
     margin-top:0px;
-    padding:0px;
+    padding:5px;
 }
 
 /*----------------------------------------------------
@@ -15,7 +23,7 @@ Nav bar
 nav {
     border-top:1px solid #eee;
     border-bottom:1px solid #eee;
-    padding:0px;
+    padding:5px;
     margin-top:10px;
 }
 nav ul {
