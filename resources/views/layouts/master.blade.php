@@ -39,7 +39,7 @@
 		@yield('content')
 </div>
 	<footer class="text-center">
-<div id="copyright text-right">&copy; {{ date('Y') }} MPVC Online</div>
+<div class="copyright text-center">&copy; {{ date('Y') }} MPVC Online</div>
 <!-- Initialize Chosen plugin: -->
 			 <script type="text/javascript"> $(".chosen-select").chosen({no_results_text: 'Oops, nothing found!', });</script>
 	</footer>
