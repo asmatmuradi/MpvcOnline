@@ -52,7 +52,7 @@
 
                   <div class="form-group">
                       <label for="message">Message:</label>
-                      <textarea id="message" name="message" class="form-control" value='{{old('message','')}}'>Type your message here...</textarea>
+                      <textarea id="message" name="message" class="form-control" >Type your message here...</textarea>
                       @if($errors->get('message'))
                       <div class='alert alert-danger'>
                         @include('modules.error-field', ['fieldName' => 'message'])
@@ -67,6 +67,7 @@
         <div class='col-md-4'>
           <br /><br />
             <form>
+               <fieldset>
             <legend><span class='glyphicon glyphicon-globe'></span> Our office</legend>
             <address>
                 <strong>MPVC, Inc.</strong><br>
@@ -80,8 +81,9 @@
                 <strong>Asmat Muradi</strong><br>
                 <a href='mailto:#'>asmat.muradi@live.com</a>
             </address>
+          </fieldset>
             </form>
         </div>
-
+      </div>
 </div>
 @stop
