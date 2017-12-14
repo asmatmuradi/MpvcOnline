@@ -33,6 +33,8 @@ Route::any('/product/', 'ProductController@index');
 Route::get('/contact', 'ContactController@contactGet');
 Route::post('/contact/mail', 'ContactController@contactPost');
 
+Route::get('/aboutus', 'WelcomeController@aboutUs');
+
 Route::get('/debug', function () {
 
     $debug = [

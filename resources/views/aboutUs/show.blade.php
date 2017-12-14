@@ -5,10 +5,9 @@
 @endpush
 
 @section('title')
-    Welcome
+    Products
 @endsection
 
-
 @section('content')
-    <h1>Welcome to MPVC Online</h1>
-  
+<h3>This page is under construction...</h3>
+@stop

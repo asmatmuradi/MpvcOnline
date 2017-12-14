@@ -18,6 +18,5 @@ class DatabaseSeeder extends Seeder
         $this->call(TagsTableSeeder::class);
         $this->call(CertficationsTableSeeder::class);
         $this->call(ProductTagTableSeeder::class);
-
     }
 }

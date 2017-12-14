@@ -8,6 +8,8 @@
     <p>
         A new generation of systems - PVC door and windows
     </p>
-    <img width="100%" class="imagess" src="images/home.png">
+    <div class='background'>
+      <img class="images" src="images/home.png">
+    </div>
 
 @endsection

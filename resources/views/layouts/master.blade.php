@@ -15,12 +15,12 @@
 		<link href='/plugin/chosen/chosen.css' type='text/css' rel='stylesheet'>
 		<script type="text/javascript" src='/plugin/chosen/chosen.jquery.js'></script>
 		<link href="/css/store.css?v={{ $assetVersion }}" type='text/css' rel='stylesheet'>
-		
+
 		@stack('head')
 
 </head>
 <body>
-	<div clsss='container'>
+	<div class='container'>
 
 	<header class='row'>
 
