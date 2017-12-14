@@ -36,7 +36,7 @@
             <a href='/product/{{ $product['id'] }}/delete'>Delete</a>
           </div>
           <div class="thumbnail col-md-4">
-              <img src='{{ $product['image'] }}' class='img-rounded'>
+              <img src='{{ $product['image'] }}' class='img-rounded' alt='Product Image'>
           </div>
       </div>
       <br />
