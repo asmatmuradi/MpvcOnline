@@ -29,7 +29,7 @@
 			<nav>
 					<ul>
 							<li><a href='/home'>Home</a>
-							<li><a href='/product'>Product</a>
+							<li><a href='/product'>Products</a>
 							<li><a href='/aboutus'>About Us</a>
 							<li><a href='/contact'>Contact</a>
 					</ul>
