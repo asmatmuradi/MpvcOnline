@@ -9,7 +9,7 @@
         A new generation of systems - PVC door and windows
     </p>
     <div class='background'>
-      <img class="images" src="images/home.png">
+      <img class="images" src="images/home.png" alt="MPVC Online Cover Image">
     </div>
 
 @endsection
